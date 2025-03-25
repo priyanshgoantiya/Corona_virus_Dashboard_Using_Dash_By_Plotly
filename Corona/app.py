@@ -86,5 +86,4 @@ def update_graph(type):
         return {'data': [go.Bar(x=State_data['detected_state'], y=State_data['count'])],
                 'layout': go.Layout(title='State Total Count')}
 if __name__ == '__main__':
-    app.run_server(debug=True)
-
+    app.run(debug=True)
