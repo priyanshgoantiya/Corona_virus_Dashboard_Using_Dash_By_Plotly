@@ -85,5 +85,6 @@ def update_graph(type):
         State_data = Recovered['detected_state'].value_counts().reset_index()
         return {'data': [go.Bar(x=State_data['detected_state'], y=State_data['count'])],
                 'layout': go.Layout(title='State Total Count')}
-if __name__=='__main__':
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run_server(debug=True)
+
