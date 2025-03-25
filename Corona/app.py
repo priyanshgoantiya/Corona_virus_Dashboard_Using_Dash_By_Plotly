@@ -16,7 +16,7 @@ external_stylesheets = [
     }
 ]
 
-df=pd.read_csv('IndividualDetails.csv')
+df=pd.read_csv('Corona/IndividualDetails.csv')
 Total = df.shape[0]
 Recovered = df[df['current_status'] == 'Recovered'].shape[0]
 Deaths = df[df['current_status'] == 'Deceased'].shape[0]
